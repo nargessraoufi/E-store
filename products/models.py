@@ -3,8 +3,11 @@ from django.db import models
 class Product(models.Model):
     PRODUCT_CATEGORIES = [
         ('PHONE', 'Smartphone'),
-        ('ACCESSORY', 'Accessory'),
+        ('CAMERA', 'Camera'),
         ('WATCH', 'Smartwatch'),
+        ('HEADPHONE', 'Headphone'),
+        ('COMPUTER', 'Computer'),
+        ('GAMING', 'Gaming'),
     ]
     
     name = models.CharField(max_length=255)
